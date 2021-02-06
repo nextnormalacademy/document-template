@@ -1,4 +1,4 @@
-= Template for https://isaqb.org[iSAQB] Advanced Level Curricula
+= Template for https://nextnormal.academy[nextnormal.academy] Curricula
 
 :toc:
 :toc-placement!:
@@ -12,17 +12,17 @@ ifdef::env-github[]
 endif::[]
 
 == Status 
-image:https://github.com/isaqb-org/advanced-template/workflows/CI/badge.svg?branch=master["CI"]
-image:https://img.shields.io/github/last-commit/isaqb-org/advanced-template/master.svg["Last commit"]
-image:https://img.shields.io/github/contributors/isaqb-org/advanced-template.svg["Contributors",link="https://github.com/isaqb-org/advanced-template/graphs/contributors"]
-image:https://img.shields.io/github/issues/isaqb-org/advanced-template.svg["Issues",link="https://github.com/isaqb-org/advanced-template/issues"]
-image:https://img.shields.io/github/issues-closed/isaqb-org/advanced-template.svg["Issues closed",link="https://github.com/isaqb-org/advanced-template/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+"]
+image:https://github.com/nextnormalacademy/document-template/workflows/CI/badge.svg?branch=master["CI"]
+image:https://img.shields.io/github/last-commit/nextnormalacademy/document-template/master.svg["Last commit"]
+image:https://img.shields.io/github/contributors/nextnormalacademy/document-template.svg["Contributors",link="https://github.com/nextnormalacademy/document-template/graphs/contributors"]
+image:https://img.shields.io/github/issues/nextnormalacademy/document-template.svg["Issues",link="https://github.com/nextnormalacademy/document-template/issues"]
+image:https://img.shields.io/github/issues-closed/nextnormalacademy/document-template.svg["Issues closed",link="https://github.com/nextnormalacademy/document-template/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+"]
 
 
 This is <<copyrighted,copyrighted work>>.
 
 == Content
-This repository contains a template for iSAQB Advanced Level *curricula* in AsciiDoc.
+This repository contains a template for nextnormal.academy *curricula* in AsciiDoc.
 
 toc::[]
 
@@ -37,27 +37,27 @@ Create an issue, a merge- or pull-request
 [source,shell]
 ----
 Via SSH:
-git clone git@github.com:isaqb-org/advanced-template.git --recursive
+git clone git@github.com:nextnormalacademy/document-template.git --recursive
 
 Via HTTPS:
-git clone https://github.com/isaqb-org/advanced-template.git --recursive
+git clone https://github.com/nextnormalacademy/document-template.git --recursive
 ----
 --
-. Rename the repository to the name of your curriculum e.g. `curriculum-flex`
-. Rename the file `/docs/advanced-template.adoc` to the name of your curriculum e.g. `curriculum-flex.adoc` (this is later on referred to as `curriculumFileName`)
+. Rename the repository to the name of your curriculum e.g. `apo-curriculum`
+. Rename the file `/docs/document-template.adoc` to the name of your curriculum e.g. `apo-curriculum.adoc` (this is later on referred to as `curriculumFileName`)
 . Open the file `./config/setup.adoc` to adjust configuration specific to your curriculum:
-.. `:curriculum-short: MODULKUERZEL`: this is the abbreviation of your module. Replace MODULKUERZEL with your module name e.g. FLEX
-.. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full German title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Flexible Architecture Models - Microservices und Self-Contained Systems"
-.. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full English title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Flexible Architecture Models - Microservices and Self-Contained Systems"
+.. `:curriculum-short: MODULKUERZEL`: this is the abbreviation of your module. Replace MODULKUERZEL with your module name e.g. APO
+.. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full German title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Advanced Product Owner"
+.. `:curriculum-name: MODULNAME IN VOLLER LAENGE`: the full English title of your CPSA-A module. replace "MODULNAME IN VOLLER LAENGE" with your module name e.g. "Advanced Product Owner"
 . Open the file `build.gradle` to adjust attributes specific to your curriculum:
 [loweralpha]
-.. `curriculumFileName`: the name of the asciidoc root file of your curriculum e.g. `curriculum-flex` (see above! The `.adoc` suffix is added automatically, omit it here!)
+.. `curriculumFileName`: the name of the asciidoc root file of your curriculum e.g. `apo-curriculum` (see above! The `.adoc` suffix is added automatically, omit it here!)
 . Edit the file `document.version` and enter the version number this new version of the curriculum shall have e.g. "2020.1".
-. Open README.adoc and replace the string `curriculum-template` with the name of your Github repository e.g. `curriculum-flex`
+. Open README.adoc and replace the string `curriculum-template` with the name of your Github repository e.g. `apo-curriculum`
 . Build the project with http://www.gradle.com[gradle] (you need a locally installed JDK) via `./gradlew`.
 . Once the "BUILD SUCCESSFUL" is show, you can review the build result under `./build/index.html`
 
-== How to write iSAQB Advanced Level Curricula with AsciiDoc
+== How to write nextnormal.academy Curricula with AsciiDoc
 
 === Requirements and (our) solutions
 
@@ -67,7 +67,7 @@ git clone https://github.com/isaqb-org/advanced-template.git --recursive
 |Solution
 
 |Visually appealing pdf output
-|We created an iSAQB pdf theme, located under the `/style` directory. The original is maintained in the `adoc2pdf` repository.
+|We created an nextnormal.academy pdf theme, located under the `/style` directory. The original is maintained in the `adoc2pdf` repository.
 
 |Multiple people contribute content, review and comment
 |highly modularized content: Small chunks, like learning-goals or subsections, are contained in their own asciidoc-files.
@@ -94,7 +94,7 @@ git clone https://github.com/isaqb-org/advanced-template.git --recursive
 
 - - -
 
-**TODO:** Add explanation for keywords and general procedure when creating a new Advanced Level Curriculum.
+**TODO:** Add explanation for keywords and general procedure when creating a new curriculum.
 
 - - -
 
@@ -224,8 +224,8 @@ include::docs-ext/EXTERNAL_DOCUMENTS_README.adoc[]
 
 == Maintainers
 
-This repository is currently maintained by Benjamin Wolf.
-It was forked from https://github.com/isaqb-org/curriculum-template,
+This repository is currently maintained by Gerrit Beine.
+It was forked from https://github.com/isaqb-org/advanced-template,
 so the contributors of that project basically contributed to this one, too.
 
 

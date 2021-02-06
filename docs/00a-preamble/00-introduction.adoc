@@ -1,13 +1,7 @@
 // tag::DE[]
-== Einführung: Allgemeines zum iSAQB Advanced Level
+== Einführung: Allgemeines
 // end::DE[]
 
 // tag::EN[]
-== Introduction: General information about the iSAQB Advanced Level
+== Introduction: General information
 // end::EN[]
-
-include::01-what-to-expect-of-an-advanced-level-module.adoc[{include_configuration}]
-
-include::02-advanced-level-knowledge.adoc[{include_configuration}]
-
-include::03-prerequisites.adoc[{include_configuration}]

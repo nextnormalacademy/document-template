@@ -19,7 +19,7 @@ ext {
   versionDate = new SimpleDateFormat("yyyyMMdd").format(today)
 
   project.version = project.file("./document.version").text
-  curriculumFileName = "curriculum-template"
+  curriculumFileName = "document-template"
   addSuffixToCurriculum = { suffix ->
     for (extension in ["html", "pdf"]) {
       File source = new File("${buildDir}/${curriculumFileName}.${extension}")
@@ -57,7 +57,7 @@ class RenderCurriculumTask extends AsciidoctorTask {
       'debug_adoc'        : false,
       'pdf-stylesdir'     : '../pdf-theme/themes',
       'pdf-fontsdir'      : '../pdf-theme/fonts',
-      'pdf-style'         : 'isaqb'
+      'pdf-style'         : 'nextnormal.academy'
     ]
   }
 }
