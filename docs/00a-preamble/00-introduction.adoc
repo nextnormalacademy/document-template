@@ -1,5 +1,10 @@
 // tag::DE[]
 == Einführung: Allgemeines
+Dieses Currculum beschreibt, was die Teilnehmer im Advanced Product Owner Training erwarten können und was Teil der Advanced Product Owner Zertifizierungsprüfung ist.
+
+Den Trainern steht es frei, ihren Trainings zusätzliche Elemente hinzuzufügen.
+
+Ein Training, das als Advanced Product Owner Training bezeichnet wird, muss jedoch mindestens alle in diesem Curriculum beschriebenen Themen abdecken.
 // end::DE[]
 
 // tag::EN[]
